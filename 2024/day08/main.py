@@ -9,7 +9,7 @@ from collections import defaultdict
 # DEBUG = True
 DEBUG = False
 
-input_data = np.array([[value for value in data.strip()] for data in input_reader.ged_data(DEBUG)])
+input_data = np.array([[value for value in data.strip()] for data in aoc_helper.ged_data(DEBUG)])
 
 antennas = defaultdict(list)
 

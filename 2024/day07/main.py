@@ -3,7 +3,7 @@ import aoc_helper
 # DEBUG = True
 DEBUG = False
 
-input_data = [input_data.strip() for input_data in input_reader.ged_data(DEBUG)]
+input_data = [input_data.strip() for input_data in aoc_helper.ged_data(DEBUG)]
 
 def line_to_dict(line):
     total, values = line.split(": ")

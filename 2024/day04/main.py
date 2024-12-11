@@ -4,7 +4,7 @@ import numpy as np
 # DEBUG = True
 DEBUG = False
 
-input_data = input_reader.ged_data(DEBUG)
+input_data = aoc_helper.ged_data(DEBUG)
 
 # remove new lines
 matrix = [line.strip() for line in input_data]

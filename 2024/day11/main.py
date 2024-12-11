@@ -5,7 +5,7 @@ import aoc_helper
 # DEBUG = True
 DEBUG = False
 
-starting_stones = [int(stone) for stone in input_reader.ged_data(DEBUG)[0].split(" ")]
+starting_stones = [int(stone) for stone in aoc_helper.ged_data(DEBUG)[0].split(" ")]
 
 lookup_table = {}
 stones = []
@@ -64,5 +64,5 @@ if __name__ == "__main__":
 
     time_stop = time()
     run_time = time_stop - time_start
-    print(input_reader.format_time(run_time))
+    print(aoc_helper.format_time(run_time))
     print(f"Total stones: {count_stones(stones)}")

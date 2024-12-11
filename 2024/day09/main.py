@@ -9,7 +9,7 @@ DEBUG = False
 DE_FRAG_V1 = True
 DE_FRAG_V2 = True
 
-disk_map = input_reader.ged_data(DEBUG)[0]
+disk_map = aoc_helper.ged_data(DEBUG)[0]
 # input_data = [[value for value in line.strip()] for line in input_data]
 
 original_block_map = BlockMap()

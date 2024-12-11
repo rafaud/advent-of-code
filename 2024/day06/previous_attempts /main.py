@@ -100,7 +100,7 @@ class Tile:
 DEBUG = True
 # DEBUG = False
 
-input_data = input_reader.ged_data(DEBUG)
+input_data = aoc_helper.ged_data(DEBUG)
 input_data = np.array([[value for value in line.strip()] for line in input_data])
 
 guard = Guard(Position(0, 0), Direction.UP)

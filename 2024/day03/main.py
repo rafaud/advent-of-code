@@ -12,7 +12,7 @@ def process_part(part):
         for a, b in re.findall(r"mul\((\d{1,3}),(\d{1,3})\)", part)
     ])
 
-input_data = input_reader.ged_data(DEBUG)
+input_data = aoc_helper.ged_data(DEBUG)
 # Remove new lines
 input_data = ["".join(input_data)]
 

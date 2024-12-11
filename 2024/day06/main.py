@@ -10,7 +10,7 @@ from model.FacilityMap import FacilityMap
 # DEBUG = True
 DEBUG = False
 
-input_data = input_reader.ged_data(DEBUG)
+input_data = aoc_helper.ged_data(DEBUG)
 input_data = np.array([[value for value in line.strip()] for line in input_data])
 
 empty_facility_map = FacilityMap.from_string_array(input_data)
@@ -48,7 +48,7 @@ print(f"Loop count: {loop_count}")
 
 time_stop = time()
 run_time = time_stop - time_start
-print(input_reader.format_time(run_time))
+print(aoc_helper.format_time(run_time))
 with open("output.txt", "w") as file:
     file.write(str(facility_map))
 
