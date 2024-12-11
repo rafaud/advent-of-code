@@ -2,7 +2,7 @@ from enum import Enum
 from unittest import case
 
 import numpy as np
-import input_reader
+import aoc_helper
 
 class Direction(Enum):
     UP = 0

@@ -1,4 +1,4 @@
-import input_reader
+import aoc_helper
 import numpy as np
 
 # DEBUG = True

@@ -1,7 +1,7 @@
 from collections import defaultdict
 from math import floor
 
-import input_reader
+import aoc_helper
 import re
 
 # DEBUG = True

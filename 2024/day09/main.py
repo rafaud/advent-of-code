@@ -1,7 +1,7 @@
 import copy
 import re
 
-import input_reader
+import aoc_helper
 from BlockMap import BlockMap
 
 # DEBUG = True

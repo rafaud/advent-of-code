@@ -2,7 +2,7 @@ import copy
 from math import floor
 from time import sleep, time
 
-import input_reader
+import aoc_helper
 import numpy as np
 
 from model.FacilityMap import FacilityMap
@@ -44,15 +44,11 @@ for i in range(facility_map.tiles.shape[0]):
                     break
                 guard_move = facility_map_copy.move_guard()
 
-time_stop = time()
 print(f"Loop count: {loop_count}")
 
+time_stop = time()
 run_time = time_stop - time_start
-time_min = int(floor(run_time/60))
-time_s = int(floor(run_time - time_min*60))
-time_ms = int(floor((run_time - time_min*60 - time_s) * 1000))
-
-print(f"Run time: {time_min}min {time_s}s {time_ms}ms")
+print(input_reader.format_time(run_time))
 with open("output.txt", "w") as file:
     file.write(str(facility_map))
 

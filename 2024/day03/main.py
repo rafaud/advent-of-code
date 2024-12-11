@@ -1,4 +1,4 @@
-import input_reader
+import aoc_helper
 import re
 
 # DEBUG = True

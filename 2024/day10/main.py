@@ -1,6 +1,6 @@
 import copy
 from collections import defaultdict
-import input_reader
+import aoc_helper
 from typing import Tuple
 import numpy as np
 
