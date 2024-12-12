@@ -267,3 +267,4 @@ pyrightconfig.json
 **/input.txt
 **/input_test.txt
 **/output*.txt
+**/output/*
