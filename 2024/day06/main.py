@@ -10,7 +10,7 @@ from model.FacilityMap import FacilityMap
 # DEBUG = True
 DEBUG = False
 
-input_data = aoc_helper.ged_data(DEBUG)
+input_data = aoc_helper.get_data(DEBUG)
 input_data = np.array([[value for value in line.strip()] for line in input_data])
 
 empty_facility_map = FacilityMap.from_string_array(input_data)

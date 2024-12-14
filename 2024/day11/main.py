@@ -5,7 +5,7 @@ import aoc_helper
 # DEBUG = True
 DEBUG = False
 
-starting_stones = [int(stone) for stone in aoc_helper.ged_data(DEBUG)[0].split(" ")]
+starting_stones = [int(stone) for stone in aoc_helper.get_data(DEBUG)[0].split(" ")]
 
 lookup_table = {}
 stones = []

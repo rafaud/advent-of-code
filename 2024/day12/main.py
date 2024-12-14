@@ -6,7 +6,7 @@ from SubField import SubField
 # DEBUG = True
 DEBUG = False
 
-field = np.array([[tile for tile in line.strip()] for line in aoc_helper.ged_data(DEBUG)])
+field = np.array([[tile for tile in line.strip()] for line in aoc_helper.get_data(DEBUG)])
 
 field_shape = field.shape
 

@@ -7,7 +7,7 @@ DEBUG = False
 
 token_cost = {"A": 3, "B": 1}
 
-input_data = aoc_helper.ged_data(DEBUG)
+input_data = aoc_helper.get_data(DEBUG)
 claw_machines_strings = []
 for i in range(0, len(input_data), 4):
     claw_machines_strings.append([line.strip() for line in input_data[i:i + 3]])

@@ -7,7 +7,7 @@ import numpy as np
 # DEBUG = True
 DEBUG = False
 
-t_map = np.array([[int(value) for value in data.strip()] for data in aoc_helper.ged_data(DEBUG)])
+t_map = np.array([[int(value) for value in data.strip()] for data in aoc_helper.get_data(DEBUG)])
 print(t_map)
 
 def clamp_location(_location):

@@ -7,7 +7,7 @@ import re
 # DEBUG = True
 DEBUG = False
 
-input_data = aoc_helper.ged_data(DEBUG)
+input_data = aoc_helper.get_data(DEBUG)
 
 rules = defaultdict(list)
 prints = []
