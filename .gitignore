@@ -265,6 +265,6 @@ pyrightconfig.json
 
 # Hide input values
 **/input.txt
-**/input_test.txt
+**/input*.txt
 **/output*.txt
 **/output/*
