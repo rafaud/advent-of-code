@@ -72,16 +72,15 @@ def run(stdscr):
         if _new_path != -1: _path = _new_path
         for row, line in enumerate(_plan):
             for col, tile in enumerate(line):
-                stdscr.addstr(row, col, tile, curses.color_pair(1 if tile == "#" else 3))
+                stdscr.addstr(row, col*2, tile*2, curses.color_pair(1 if tile == "#" else 3))
         for row, col in _path:
-                stdscr.addstr(row, col, "o", curses.color_pair(2))
-        if _new_path ==-1:
+                stdscr.addstr(row, col*2, "o"*2, curses.color_pair(2))
+        if _new_path == -1:
             last_row, last_col = bytes_list[bytes_count -1]
-            stdscr.addstr(last_row, last_col, "X", curses.color_pair(4))
-        stdscr.addstr("\n")
+            stdscr.addstr(last_row, last_col*2, "X"*2, curses.color_pair(4))
         stdscr.addstr(h + 1, 0, f"Byte: {bytes_count}, position: {bytes_list[bytes_count -1]}\n")
         stdscr.refresh()
-        sleep(0.01)
+        sleep(0.002)
 
 
     stdscr.addstr(f"Path not found", curses.color_pair(1))
@@ -94,7 +93,7 @@ if __name__ == "__main__":
     w, h = 71, 71
     start = (0, 0)
     stop = (w - 1, h - 1)
-    bytes_count = 1024
+    bytes_count = 0
 
     with open("input.txt") as f:
         lines = [line.split(",") for line in f.readlines()]
