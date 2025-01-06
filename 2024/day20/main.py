@@ -92,14 +92,16 @@ for i, possible_start in enumerate(normal_path[1]):
         # Check if we're not checking the same tile
         if possible_start == possible_end: continue
 
+        cheat_distance = get_cheat_distance(possible_start, possible_end)
+
         # Check if tiles are not next to each other (it would mean normal path)
-        if get_cheat_distance(possible_start, possible_end) == 1: continue
+        if cheat_distance == 1: continue
 
         # Check if it's possible to get to end tile in maximum cheat distance
-        if get_cheat_distance(possible_start, possible_end) > max_cheat_distance: continue
+        if cheat_distance > max_cheat_distance: continue
 
         # Check if cheat is actually saving time
-        time_saved = normal_path[2][possible_end] - normal_path[2][possible_start] - get_cheat_distance(possible_start, possible_end)
+        time_saved = normal_path[2][possible_end] - normal_path[2][possible_start] - cheat_distance
         if time_saved <= 0: continue
         # And if it save minimum of required saved time
         if time_saved < min_time_saved: continue
