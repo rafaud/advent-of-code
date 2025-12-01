@@ -32,7 +32,8 @@ dir_path="$year/day$day"
 mkdir -p "$dir_path"
 
 # Create the files in the directory
-touch "$dir_path/input.txt" "$dir_path/input_test.txt" "$dir_path/main.py"
+touch "$dir_path/input.txt" "$dir_path/input_test.txt"
+cp template.py "$dir_path/main.py"
 
 # Provide feedback to the user
 echo "Created directory and files:"
