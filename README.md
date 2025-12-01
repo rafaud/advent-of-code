@@ -7,7 +7,7 @@
 [![AoC 2020](https://img.shields.io/badge/2020-★_0-red)](https://adventofcode.com/2020)
 [![AoC 2021](https://img.shields.io/badge/2021-★_0-red)](https://adventofcode.com/2021)
 [![AoC 2022](https://img.shields.io/badge/2022-★_0-red)](https://adventofcode.com/2022)
-[![AoC 2023](https://img.shields.io/badge/2023-★_0-red)](https://adventofcode.com/2023)
-[![AoC 2024](https://img.shields.io/badge/2024-★_46-yellow)](https://adventofcode.com/2024)
+[![AoC 2023](https://img.shields.io/badge/2023-★_0-red)](https://adventofcode.com/2023)[![AoC 2024](https://img.shields.io/badge/2024-★_50-brightgreen)](https://adventofcode.com/2024)
+[![AoC 2025](https://img.shields.io/badge/2025-★_2-yellow)](https://adventofcode.com/2025)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/rafaud/advent-of-code)
