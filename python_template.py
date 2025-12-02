@@ -7,16 +7,16 @@ import os.path
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("input", help="Input file name")
-    parser.add_argument("--verbose", action="store_true", help="Enable verbose mode")
+    parser.add_argument("-f", "--file", help="Input file name")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose mode")
     args = parser.parse_args()
 
     # Check if given file exists
-    if not os.path.isfile(args.input):
+    if not os.path.isfile(args.file):
         print("Input file does not exist")
         return
 
-    with open(args.input, "r") as file:
+    with open(args.file, "r") as file:
         raw_input = file.read()
 
     # solution goes here
