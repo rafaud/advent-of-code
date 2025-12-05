@@ -7,11 +7,11 @@ import os.path
 
 VERBOSE = False
 
-def main(input_data, verbose):
+def main(input_data, _args):
     # solution goes here
     None
 
-def run (stdscr, input_data, verbose):
+def run (stdscr, input_data, _args):
     height, width = stdscr.getmaxyx()
     curses.curs_set(0)                      # set cursor invisible
     curses.use_default_colors()             # use default colors (-1)
@@ -36,9 +36,9 @@ if __name__ == "__main__":
 
     parsed_input = raw_input.split("\n")
 
-    if "TERM_PROGRAM" in os.environ:
-        curses.wrapper(run, parsed_input, args.verbose)
+    if "TERM_PROGRAM" in os.environ and args.curses:
+        curses.wrapper(run, parsed_input, args)
     else:
         if os.environ.get("PYCHARM_HOSTED"): # Check if run in PyCharm
             VERBOSE = True
-        main(parsed_input, args.verbose)
+        main(parsed_input, args)
