@@ -22,7 +22,7 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--file", help="Input file name", default="input_test.txt")
     parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose mode")
     parser.add_argument("-c", "--curses", action="store_true", help="Enable curses mode")
-    parser.add_argument("-p", "--part", help="Select part (1 or 2)", action="store", type=int, default=[1], nargs="+")
+    parser.add_argument("-p", "--part", help="Select part (1 or 2)", action="store", type=int, default=[1, 2], nargs="+")
     args = parser.parse_args()
     VERBOSE = args.verbose
 
